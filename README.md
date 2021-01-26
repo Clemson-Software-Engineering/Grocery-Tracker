@@ -33,7 +33,7 @@ This project is just getting off the ground, so we do not have too much for addi
 Coming soon ...
 
 ## Starting members
-* Lee Jackson
+* Lee Jackson (ldjacks@g.clemson.edu)
 * Cole Haas (cole.haas.11@gmail.com)
 * Md Atik Enam (menam@g.clemson.edu)
 * Jeffrey Wang
