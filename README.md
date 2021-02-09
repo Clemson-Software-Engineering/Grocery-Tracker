@@ -11,6 +11,7 @@
 * [Project Status](#project-status)
 * [Launch](#launch)
 * [Starting Members](#starting-members)
+* [Task Assignment](#task-assignment)
 
 ## Introduction
 The current vision for this project is a free open-source web application that keeps inventory on the food you have in your home and will suggest if you need anything to buy. The goal of this project is to make grocery lists quickly and easily or plan out recipes no matter where you are. Since you know your inventory, this could be done at your home, your office, or even the grocery store. 
@@ -37,3 +38,13 @@ Coming soon ...
 * Cole Haas (cole.haas.11@gmail.com)
 * Md Atik Enam (menam@g.clemson.edu)
 * Jeffrey Wang (jwng@clemson.edu)
+
+## Task Assignment
+| Tasks     | Contributing Members |
+| :---:        |    :----:   |
+| Graphic Design      | Lee Jackson       |
+| Interface Implementation   | Jeffrey Wang, Cole Haas        |
+| Database Structure | Lee Jackson, Atik Enam |
+| Back End Development | Lee Jackson, Atik Enam, Cole Haas |
+| DevOps | Jeffrey Wang, Cole Haas |
+| Computer Vision | Jeffrey Wang, Lee Jackson |
