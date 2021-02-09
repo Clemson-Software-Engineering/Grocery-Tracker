@@ -16,6 +16,17 @@ The current vision for this project is a free open-source web application that k
 * Add or remove products from the grocery list  
 
 ## Getting Started
+### Requirements
+
+### Clone the Repo
+```bash
+git clone https://github.com/Clemson-Software-Engineering/Grocery-Tracker.git
+```
+If you plan to use Docker, skip to [here](#docker)
+### Set Up
+### Docker
+### Running
+### Testing
 
 ## How to Contribute
 * We are always welcome to more contribution. If you are interested in being a contributer, please check out our issues section and look for "good first issue". Keep read [[Contributing Guidlines]](CONTRIBUTING.md), and [[Code of Conduct]](CODE_OF_CONDUCT.md). Take a look at [Getting Started](getting-started) to set up environment.
