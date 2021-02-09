@@ -36,4 +36,4 @@ Coming soon ...
 * Lee Jackson (ldjacks@g.clemson.edu)
 * Cole Haas (cole.haas.11@gmail.com)
 * Md Atik Enam (menam@g.clemson.edu)
-* Jeffrey Wang
+* Jeffrey Wang (jwng@clemson.edu)
