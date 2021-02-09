@@ -24,14 +24,15 @@ The current vision for this project is a free open-source web application that k
 * Add or remove products from the grocery list
 	
 ## Technologies
-* Back end (Planned): Java
-* Front end (Planned): JavaScript, probably vanilla or react
+* Environment: Docker
+* Back end: Deno
+* Front end: Typescript
 	
 ## Project status
 This project is just getting off the ground, so we do not have too much for additional contributors to do yet. However, we are very interested in any feedback or ideas that you may have, and we will let you know when there are more opportunities to contribute.
 
 ## Launch
-Coming soon ...
+Initial Launch projected for May 1. Will be continuously developed and integrated.
 
 ## Starting members
 * Lee Jackson (ldjacks@g.clemson.edu)
