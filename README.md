@@ -2,13 +2,13 @@
 The current vision for this project is a free open-source web application that keeps inventory on the food you have in your home and will suggest if you need anything to buy. The goal of this project is to make grocery lists quickly and easily or plan out recipes no matter where you are. Since you know your inventory, this could be done at your home, your office, or even the grocery store. 
 
 ## Table of contents
-* [Functionalities](#functionalies)
+* [Functionalities](#functionalities)
 * [Getting Started](#getting-started)
 * [How to Contribute](#how-to-contribute)
 * [Plans](#plans)
 * [Developers](#developers)
 
-## Functionalies
+## Functionalities
 * Tell you the amount of each product you have
 * Search specific products
 * View all the products in the inventory (using different filters)
