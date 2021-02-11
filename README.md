@@ -29,7 +29,7 @@ If you plan to use Docker, skip to [here](#docker)
 ### Testing
 
 ## How to Contribute
-* We are always welcome to more contribution. If you are interested in being a contributer, please check out our issues section and look for "good first issue". Keep read [[Contributing Guidlines]](CONTRIBUTING.md), and [[Code of Conduct]](CODE_OF_CONDUCT.md). Take a look at [Getting Started](getting-started) to set up environment.
+* We are always welcome to more contribution. If you are interested in being a contributer, please check out our issues section and look for "good first issue". Read [[Contributing Guidlines]](CONTRIBUTING.md), and [[Code of Conduct]](CODE_OF_CONDUCT.md). Take a look at [Getting Started](getting-started) to set up environment.
 	
 ## Plans
 * Environment: Docker
