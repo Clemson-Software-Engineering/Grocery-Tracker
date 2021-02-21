@@ -25,6 +25,12 @@ git clone https://github.com/Clemson-Software-Engineering/Grocery-Tracker.git
 If you plan to use Docker, skip to [here](#docker)
 ### Set Up
 ### Docker
+```bash
+cd Docker
+docker build -t deno-aleph .
+docker run -p 8080:8080 deno-aleph
+```
+Go to http://localhost:8080 after it is finished running and you should see hello aleph app
 ### Running
 ### Testing
 
