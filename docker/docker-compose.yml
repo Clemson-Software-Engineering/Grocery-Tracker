@@ -1,0 +1,30 @@
+version: '3.1'
+
+services:
+
+  aleph:
+    container_name: grocery_app
+    build:
+      context: .
+    ports:
+      - 8080:8080
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: user
+      MONGO_INITDB_ROOT_PASSWORD: pass
+    volumes:
+      - ./mongo-volume:/data/db
+
+  mongo-express:
+    image: mongo-express
+    container_name: groc_mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: user
+      ME_CONFIG_MONGODB_ADMINPASSWORD: pass
