@@ -24,14 +24,28 @@ git clone https://github.com/Clemson-Software-Engineering/Grocery-Tracker.git
 ```
 If you plan to use Docker, skip to [here](#docker)
 ### Set Up
+##### Linux/Mac
+```bash
+curl -fsSL https://deno.land/x/install/install.sh | sh
+deno install -A -f -n aleph https://deno.land/x/aleph@v0.3.0-alpha.1/cli.ts
+```
+##### Powershell
+```bash
+iwr https://deno.land/x/install/install.ps1 -useb | iex
+deno install -A -f -n aleph https://deno.land/x/aleph@v0.3.0-alpha.1/cli.ts
+```
 ### Docker
 ```bash
 cd Docker
-docker build -t deno-aleph .
-docker run -p 8080:8080 deno-aleph
+docker-compose up
 ```
 Go to http://localhost:8080 after it is finished running and you should see hello aleph app
-### Running
+You should also see Mongo-express at http://localhost:8081
+### Development
+```bash
+aleph dev aleph
+```
+You should see the running app at http://localhost:8080
 ### Testing
 
 ## How to Contribute
