@@ -12,4 +12,4 @@ RUN deno install -A -f -n aleph https://deno.land/x/aleph@v0.3.0-alpha.1/cli.ts
 RUN mkdir hello
 RUN echo y | aleph init hello
 
-CMD aleph dev hello
+CMD "aleph" "start" "hello"
