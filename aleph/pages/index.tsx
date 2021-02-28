@@ -1,38 +1,95 @@
 import { useDeno } from 'aleph'
 import React from 'react'
-import Logo from '../components/logo.tsx'
-import useCounter from '../lib/useCounter.ts'
 
-export default function Home() {
-  const [count, isSyncing, increase, decrease] = useCounter()
-  const version = useDeno(() => Deno.version.deno)
-
+export default function Test() { 
   return (
-    <div className="page">
-      <link rel="stylesheet" href="../style/index.css" />
-      <p className="logo"><Logo /></p>
-      <h1>Welcome to use <strong>Aleph.js</strong>!</h1>
-      <p className="links">
-        <a href="https://alephjs.org" target="_blank">Website</a>
-        <span></span>
-        <a href="https://alephjs.org/docs/get-started" target="_blank">Get Started</a>
-        <span></span>
-        <a href="https://alephjs.org/docs" target="_blank">Docs</a>
-        <span></span>
-        <a href="https://github.com/alephjs/aleph.js" target="_blank">Github</a>
-      </p>
-      <div className="counter">
-        <span>Counter:</span>
-        {isSyncing && (
-          <em>...</em>
-        )}
-        {!isSyncing && (
-          <strong>{count}</strong>
-        )}
-        <button onClick={decrease}>-</button>
-        <button onClick={increase}>+</button>
+    <section className="section">
+      <div className="conatiner">
+      <nav className="navbar" role="navigation" aria-label="main navigation">
+        <div className="navbar-brand">
+    <a className="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"/>
+    </a>
+
+    <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" className="navbar-menu">
+    <div className="navbar-start">
+      <a className="navbar-item">
+        Home
+      </a>
+
+      <a className="navbar-item">
+        Documentation
+      </a>
+
+      <div className="navbar-item has-dropdown is-hoverable">
+        <a className="navbar-link">
+          More
+        </a>
+
+        <div className="navbar-dropdown">
+          <a className="navbar-item">
+            About
+          </a>
+          <a className="navbar-item">
+            Jobs
+          </a>
+          <a className="navbar-item">
+            Contact
+          </a>
+          <hr className="navbar-divider"/>
+          <a className="navbar-item">
+            Report an issue
+          </a>
+        </div>
       </div>
-      <p className="copyinfo">Built by Aleph.js in Deno {version}</p>
     </div>
+
+    <div className="navbar-end">
+      <div className="navbar-item">
+        <div className="buttons">
+          <a className="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a className="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</div>
+<section className="section">
+<table className="table">
+  <tr>
+    <th>Item</th>
+      <th>Remainder</th>
+    </tr>
+    <tr>
+      <td>Sauce</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>is</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>the</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Boss</td>
+      <td>7</td>
+    </tr>
+</table>
+</section>
+</section>
   )
 }
