@@ -1,12 +1,8 @@
-import { useDeno } from 'aleph'
 import React from 'react'
-import Items from '../components/items.tsx'
 
-export default function Test() { 
-  return (
-    <section className="section">
-      <div className="conatiner">
-      <nav className="navbar" role="navigation" aria-label="main navigation">
+export default function Nav(){
+    return(
+<nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
     <a className="navbar-item" href="https://bulma.io">
       <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"/>
@@ -66,10 +62,5 @@ export default function Test() {
     </div>
   </div>
 </nav>
-</div>
-<section className="section">
-<Items />
-</section>
-</section>
-  )
+    )
 }

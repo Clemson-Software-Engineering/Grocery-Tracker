@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Items(){
     return(
-<table className="table">
+<table className="table is-bordered is-fullwidth">
   <tr>
     <th>Item</th>
       <th>Remainder</th>
