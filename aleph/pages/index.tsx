@@ -13,10 +13,10 @@ export default function Test() {
 <section className="section">
   <div className="columns">
     <div className="column">
-  <Reminder msgtype="is-warning" item="ham" msgbody="it's at a specified level!"/>
+  <Reminder msgtype="is-warning" item="ham" msgbody="it's low!"/>
   </div>
   <div className="column">
-  <Reminder msgtype="is-info" item="milk" msgbody="it's low!"/>
+  <Reminder msgtype="is-info" item="milk" msgbody="it's at a specified level!"/>
   </div>
   <div className="column">
   <Reminder msgtype="is-danger" item="banana" msgbody="it's gone!"/>
