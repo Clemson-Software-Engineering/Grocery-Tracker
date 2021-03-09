@@ -53,16 +53,15 @@ You should see the running app at http://localhost:8080
 	
 ## Plans
 * Environment: Docker
-* Back end: Deno
-* Front end: Typescript
+* Back end: Docker + Deno
+* Front end: Typescript + BulmaCSS
 
-Initial Launch projected for May 1. Will be continuously developed and integrated.
+Initial Launch projected for May 1. Will be continuously developed and integrated. Serve database at port 5000. 
 
 ## Developers
 
 | Name | Role | Email |
 | :---:  |  :---:   | :---: |
-|Jeff | Full Stack + DevOps + Computer Vision | jwng@clemson.edu |
-|Lee Jackson | Back End, Graphic Design, and Computer Vision| ldjacks@g.clemson.edu |
+|Jeff | Full Stack + DevOps| jwng@clemson.edu |
+|Lee Jackson | Back End, Graphic Design| ldjacks@g.clemson.edu |
 |Atik Enam | Back End | menam@g.clemson.edu |
-|Cole Haas | Full Stack and DevOps | cole.haas.11@gmail.com |
