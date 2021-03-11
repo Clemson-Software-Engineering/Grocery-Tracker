@@ -39,11 +39,17 @@ deno install -A -f -n aleph https://deno.land/x/aleph@v0.3.0-alpha.1/cli.ts
 cd Docker
 docker-compose up
 ```
-Go to http://localhost:8080 after it is finished running and you should see hello aleph app
+Go to http://localhost:8080 after it is finished running and you should see our homepage  
 You should also see Mongo-express at http://localhost:8081
 ### Development
+For the Front-End
 ```bash
 aleph dev aleph
+```
+For the API Server
+```bash 
+cd server
+deno run --alow-net server.ts
 ```
 You should see the running app at http://localhost:8080
 ### Testing
@@ -53,7 +59,7 @@ You should see the running app at http://localhost:8080
 	
 ## Plans
 * Environment: Docker
-* Back end: Docker + Deno
+* Back end: Docker + Deno + Oak
 * Front end: Typescript + BulmaCSS
 
 Initial Launch projected for May 1. Will be continuously developed and integrated. Serve database at port 5000. 
