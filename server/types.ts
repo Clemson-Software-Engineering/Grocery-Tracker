@@ -1,5 +1,5 @@
 export interface Product {
-    _id: { $oid: string };
+    _id?: { $oid: string };
     name: string;
     brand: string;
     quantity: number;
