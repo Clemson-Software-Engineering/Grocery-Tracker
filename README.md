@@ -27,31 +27,39 @@ If you plan to use Docker, skip to [here](#docker)
 ##### Linux/Mac
 ```bash
 curl -fsSL https://deno.land/x/install/install.sh | sh
-deno install -A -f -n aleph https://deno.land/x/aleph@v0.3.0-alpha.1/cli.ts
 ```
 ##### Powershell
 ```bash
 iwr https://deno.land/x/install/install.ps1 -useb | iex
-deno install -A -f -n aleph https://deno.land/x/aleph@v0.3.0-alpha.1/cli.ts
 ```
-### Docker
+##### Docker
+Currently you have to run docker-compose for the mongoDB. Later we'll Dockerize the production Next.js code and the Deno server, and this'll be the only thing you have to run.
 ```bash
 cd Docker
 docker-compose up
 ```
-Go to http://localhost:8080 after it is finished running and you should see our homepage  
-You should also see Mongo-express at http://localhost:8081
-### Development
-For the Front-End
+##### Server
 ```bash
-aleph dev aleph
+cd Grocery-Tracker
+deno run --allow-net server.ts
 ```
-For the API Server
-```bash 
-cd server
-deno run --alow-net server.ts
+##### Production
+```bash
+cd ../nextjs
+npm install
+npm run build
+npm start
 ```
-You should see the running app at http://localhost:8080
+##### Development
+```bash
+cd ../nextjs
+npm install
+npm run dev
+```
+
+Go to http://localhost:3000 after it is finished running and you should see our homepage  
+You should also see Mongo-express at http://localhost:8081
+
 ### Testing
 
 ## How to Contribute
@@ -60,9 +68,9 @@ You should see the running app at http://localhost:8080
 ## Plans
 * Environment: Docker
 * Back end: Docker + Deno + Oak
-* Front end: Typescript + BulmaCSS
+* Front end: Next.js + React + BulmaCSS
 
-Initial Launch projected for May 1. Will be continuously developed and integrated. Serve database at port 5000. 
+Initial Launch projected for May 1. Will be continuously developed and integrated.
 
 ## Developers
 
