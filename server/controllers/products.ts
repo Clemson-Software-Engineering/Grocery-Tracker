@@ -2,7 +2,7 @@ import { MongoClient, Bson } from "https://deno.land/x/mongo@v0.21.0/mod.ts";
 import { Product } from "../types.ts";
 
 const client = new MongoClient();
-
+//TODO routes
 
 
 const getProducts = async ({ response }: { response: any }) => {

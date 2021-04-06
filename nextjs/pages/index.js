@@ -1,9 +1,13 @@
+import {useState, useEffect} from 'react';
 import Head from "next/head";
-import Items from "../components/items.js";
+import Table from "../components/table.js";
 import Nav from "../components/nav.js";
 import Reminder from "../components/reminder.js";
 
 export default function Home() {
+  //TODO states for fetching data and generating content
+  const [] = useState(0);
+
   return (
     <section className="section">
       <Head>
@@ -13,6 +17,7 @@ export default function Home() {
       <div className="container">
         <Nav />
       </div>
+      {/* these reminders should be deleted and generated */}
       <section className="section">
         <div className="columns">
           <div className="column">
@@ -29,9 +34,10 @@ export default function Home() {
             <Reminder msgtype="is-danger" item="banana" msgbody="it's gone!" />
           </div>
         </div>
+        {/* search bar and options to search by items or names */}
       </section>
       <section className="section">
-        {/* <Items /> */}
+        {/* <Table /> */}
       </section>
     </section>
   );
