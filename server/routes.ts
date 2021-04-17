@@ -4,9 +4,10 @@ import { getProducts, addProducts } from "./controllers/products.ts";
 const router = new Router();
 //TODO
 router.get("/api/products", getProducts)
-    .post("/api/products", addProducts) //edit to take user
+    .post("/api/products", addProducts) 
     //get by user(s)
     //update item by user
+    //delete item
     //get by any field -- look into this
 
 export default router;

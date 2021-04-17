@@ -1,10 +1,11 @@
-//TODO edits
-//Add user, unit, store, url
-//Try to keep to one table
 export interface Product {
     _id?: { $oid: string };
+    user: string;
     name: string;
+    store: string;
     brand: string;
+    threshold: string;
     quantity: number;
     max_quantity: number;
+    unit: string;
 }
