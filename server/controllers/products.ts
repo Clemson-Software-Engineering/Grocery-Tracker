@@ -70,4 +70,34 @@ const addProducts = async ({ request, response }: {request: any, response : any 
     }
 }
 
-export { getProducts, addProducts }
+const lowProducts = async ({response }: {response:any }) => {
+    try{
+    await client.connect("mongodb://user:pass@127.0.0.1:27017");
+    const db = client.database("test");
+    const lowProductList = db.collection<Product>("products");
+    
+    
+    
+    const all_prods_low = await products.find({ quantity: { $lt: threshold } })
+    .toArray();
+    
+    
+    
+    response.body = {
+    success:true,
+    data: all_prods_low
+    }
+    } catch (err) {
+    response.status = 500
+    response.body = {
+    success: false,
+    msg: err.toString()
+    }
+    } finally {
+    await client.close()
+    }
+    }
+
+
+
+export { getProducts, addProducts, lowProducts }
