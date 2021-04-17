@@ -78,7 +78,7 @@ const lowProducts = async ({response }: {response:any }) => {
     
     
     
-    const all_prods_low = await products.find({ quantity: { $lt: threshold } })
+    const all_prods_low = await lowProductList.find({ $expr: { $lt: [ "$quantity", "$threshold" ] } })
     .toArray();
     
     
@@ -97,7 +97,6 @@ const lowProducts = async ({response }: {response:any }) => {
     await client.close()
     }
     }
-
 
 
 export { getProducts, addProducts, lowProducts }

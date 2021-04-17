@@ -4,7 +4,7 @@ export interface Product {
     name: string;
     store: string;
     brand: string;
-    threshold: double;
+    threshold: number;
     quantity: number;
     max_quantity: number;
     unit: string;
