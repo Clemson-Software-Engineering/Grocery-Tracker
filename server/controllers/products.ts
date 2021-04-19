@@ -98,5 +98,31 @@ const lowProducts = async ({response }: {response:any }) => {
     }
     }
 
+//example
+//http://localhost:5000/api/users/alice, bob, asdf
+    const searchProductsByUser = async ({ params, response }: { params: { id: string }, response: any }) => {
+        try{
+            await client.connect("mongodb://user:pass@127.0.0.1:27017");
+            const nameArr = params.id.toLowerCase().split(/[\s,]+/);
+            const db = client.database("test");
+            const userProducts = db.collection<Product>("products");
+    
+            const listUsersProducts = await userProducts.find({ user: { $in:nameArr } }).toArray();
+            
+            response.body = {
+                success: true,
+                data: listUsersProducts
+            }
+        } catch (err) {
+            response.status = 500
+            response.body = {
+                success: false,
+                msg: err.toString()
+            }
+        } finally {
+            await client.close()
+        }
+    }
 
-export { getProducts, addProducts, lowProducts }
+
+export { getProducts, addProducts, lowProducts, searchProductsByUser}
