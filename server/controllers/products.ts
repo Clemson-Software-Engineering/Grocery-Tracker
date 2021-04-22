@@ -47,10 +47,14 @@ const addProducts = async ({ request, response }: {request: any, response : any 
             const products = db.collection<Product>("products");
 
             const insertID = await products.insertOne({ 
+                user: product.user,
                 name: product.name,
+                store: product.store,
                 brand: product.brand,
+                threshold: product.threshold,
                 quantity: product.quantity,
                 max_quantity: product.max_quantity,
+                unit: product.unit
              });
 
             response.body = {

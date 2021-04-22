@@ -7,7 +7,6 @@ router.get("/api/products", getProducts)
     .post("/api/products", addProducts) 
     .get("/api/low", lowProducts)
     .get("/api/users/:id", searchProductsByUser)
-    //get by user(s)
     //update item by user
     //delete item
     //get by any field -- look into this
